@@ -1,5 +1,5 @@
-<form action="<%= cats_url %>", method="GET">
-<input type="hidden" name="_method" value="PATCH">
+<form action="<%= cats_url %>", method="<%= params[:action] == "edit" ? "GET" : "POST" %>">
+<input type="hidden" name="_method" value="<%=params[:action] == "edit" ? "PATCH" : "POST"%>">
   <label> Name: 
     <input type="text" name="cat[name]" value ="<%= cat.name %>"></label>
     <br>
@@ -26,6 +26,6 @@
     <label for="description">Description</label>
     <textarea name="cat[description]"> <%= cat.description %> </textarea>
 
-    <input type="submit" value="Edit Cat">
+    <input type="submit" value="<%=params[:action] == "edit" ? "Edit Cat" : "Create Cat"%>">
   </label>
 </form>

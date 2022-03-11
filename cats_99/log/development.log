@@ -1081,3 +1081,264 @@ Processing by CatsController#edit as HTML
 Completed 200 OK in 19837ms (Views: 54.2ms | ActiveRecord: 12.0ms)
 
 
+Started GET "/cats/1/edit" for ::1 at 2022-03-11 16:26:09 -0500
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (3.9ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:32
+Started GET "/cats/1/edit" for ::1 at 2022-03-11 16:26:25 -0500
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/_form.html.erb (2.4ms)
+  Rendered cats/edit.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 15409ms (ActiveRecord: 3.9ms)
+
+
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting ':'
+...= "edit" ? "<input type="hidden" name="_method" value="PATCH...
+...                         ^~~~~~
+/Users/appacademystudent/Desktop/w6d5/cats_99/app/views/cats/_form.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+...put type="hidden" name="_method" value="PATCH">" : "" );@out...
+...                        ^~~~~~~
+/Users/appacademystudent/Desktop/w6d5/cats_99/app/views/cats/_form.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+...en" name="_method" value="PATCH">" : "" );@output_buffer.saf...
+...                          ^~~~~
+/Users/appacademystudent/Desktop/w6d5/cats_99/app/views/cats/_form.html.erb:2: syntax error, unexpected ':', expecting ')'
+...ame="_method" value="PATCH">" : "" );@output_buffer.safe_app...
+...                              ^:
+  app/views/cats/_form.html.erb:2:in `'
+  app/views/cats/edit.html.erb:1:in `_app_views_cats_edit_html_erb___3010747559194303091_70111967578140'
+  app/controllers/cats_controller.rb:34:in `edit'
+
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (0.9ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:32
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/_form.html.erb (2.2ms)
+  Rendered cats/edit.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 1181ms (ActiveRecord: 1.3ms)
+
+
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting ':'
+...= "edit" ? "<input type="hidden" name="_method" value="PATCH...
+...                         ^~~~~~
+/Users/appacademystudent/Desktop/w6d5/cats_99/app/views/cats/_form.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+...put type="hidden" name="_method" value="PATCH">" : "" );@out...
+...                        ^~~~~~~
+/Users/appacademystudent/Desktop/w6d5/cats_99/app/views/cats/_form.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+...en" name="_method" value="PATCH">" : "" );@output_buffer.saf...
+...                          ^~~~~
+/Users/appacademystudent/Desktop/w6d5/cats_99/app/views/cats/_form.html.erb:2: syntax error, unexpected ':', expecting ')'
+...ame="_method" value="PATCH">" : "" );@output_buffer.safe_app...
+...                              ^:
+  app/views/cats/_form.html.erb:2:in `'
+  app/views/cats/edit.html.erb:1:in `_app_views_cats_edit_html_erb___3010747559194303091_70111912102760'
+  app/controllers/cats_controller.rb:34:in `edit'
+
+Started POST "/__better_errors/d83596de8968bf4f/variables" for ::1 at 2022-03-11 16:26:26 -0500
+Started GET "/cats/1/edit" for ::1 at 2022-03-11 16:27:19 -0500
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (0.7ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:32
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/_form.html.erb (2.0ms)
+  Rendered cats/edit.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 15.5ms)
+
+
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting ')'
+...end=( "params[:action] == "edit" ? "<input type="hidden" nam...
+...                           ^~~~
+/Users/appacademystudent/Desktop/w6d5/cats_99/app/views/cats/_form.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...ction] == "edit" ? "<input type="hidden" name="_method" valu...
+...                           ^~~~
+/Users/appacademystudent/Desktop/w6d5/cats_99/app/views/cats/_form.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+...t" ? "<input type="hidden" name="_method" value="PATCH">" : ...
+...                           ^~~~
+/Users/appacademystudent/Desktop/w6d5/cats_99/app/views/cats/_form.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+...e="hidden" name="_method" value="PATCH">" : "" ");@output_bu...
+...                          ^~~~~:
+  app/views/cats/_form.html.erb:2:in `'
+  app/views/cats/edit.html.erb:1:in `_app_views_cats_edit_html_erb___3010747559194303091_70111920752540'
+  app/controllers/cats_controller.rb:34:in `edit'
+
+Started POST "/__better_errors/26a61194a8e71b6b/variables" for ::1 at 2022-03-11 16:27:20 -0500
+Started GET "/cats/1/edit" for ::1 at 2022-03-11 16:28:45 -0500
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (15.8ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:32
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/_form.html.erb (2.2ms)
+  Rendered cats/edit.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 79ms (Views: 61.1ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/cats?_method=PATCH&cat%5Bname%5D=Derek&cat%5Bbirth_date%5D=2015-01-20&cat%5Bcolor%5D=Black&cat%5Bsex%5D=M&cat%5Bdescription%5D=hi" for ::1 at 2022-03-11 16:28:56 -0500
+Processing by CatsController#index as HTML
+  Parameters: {"cat"=>{"name"=>"Derek", "birth_date"=>"2015-01-20", "color"=>"Black", "sex"=>"M", "description"=>"hi"}}
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (4.4ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/_cat.html.erb (1.9ms)
+  Rendered cats/_cat.html.erb (0.7ms)
+  Rendered cats/_cat.html.erb (0.5ms)
+  Rendered cats/_cat.html.erb (0.3ms)
+  Rendered cats/_cat.html.erb (0.5ms)
+  Rendered cats/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 123ms (Views: 117.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/cats/new" for ::1 at 2022-03-11 16:29:58 -0500
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/_form.html.erb (1.7ms)
+  Rendered cats/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cats" for ::1 at 2022-03-11 16:30:18 -0500
+Processing by CatsController#create as HTML
+  Parameters: {"cat"=>{"name"=>"sai", "birth_date"=>"2022-02-16", "color"=>"Brown", "sex"=>"F", "description"=>"  idk"}}
+  [1m[35m (3.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:23
+  [1m[36mCat Create (3.0ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2022-02-16"], ["color", "Brown"], ["name", "sai"], ["sex", "F"], ["description", "  idk"], ["created_at", "2022-03-11 21:30:18.164641"], ["updated_at", "2022-03-11 21:30:18.164641"]]
+  ↳ app/controllers/cats_controller.rb:23
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:23
+Redirected to http://localhost:3000/cats/6
+Completed 302 Found in 16ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/cats/6" for ::1 at 2022-03-11 16:30:18 -0500
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCat Load (1.0ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/_cat.html.erb (1.1ms)
+  Rendered cats/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 52ms (Views: 48.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/cats" for ::1 at 2022-03-11 16:30:24 -0500
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (5.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/_cat.html.erb (1.8ms)
+  Rendered cats/_cat.html.erb (0.3ms)
+  Rendered cats/_cat.html.erb (0.4ms)
+  Rendered cats/_cat.html.erb (0.4ms)
+  Rendered cats/_cat.html.erb (0.6ms)
+  Rendered cats/_cat.html.erb (0.6ms)
+  Rendered cats/index.html.erb within layouts/application (45.8ms)
+Completed 200 OK in 93ms (Views: 86.4ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/cats/new" for ::1 at 2022-03-11 16:30:31 -0500
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/_form.html.erb (2.2ms)
+  Rendered cats/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 83ms (Views: 81.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new" for ::1 at 2022-03-11 16:31:23 -0500
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/_form.html.erb (1.7ms)
+  Rendered cats/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/2/edit" for ::1 at 2022-03-11 16:31:34 -0500
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCat Load (5.7ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:32
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/_form.html.erb (1.6ms)
+  Rendered cats/edit.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 75ms (Views: 67.4ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/cats?_method=PATCH&cat%5Bname%5D=Spencer&cat%5Bbirth_date%5D=2020-03-05&cat%5Bcolor%5D=Black&cat%5Bsex%5D=M&cat%5Bdescription%5D=what" for ::1 at 2022-03-11 16:31:45 -0500
+Processing by CatsController#index as HTML
+  Parameters: {"cat"=>{"name"=>"Spencer", "birth_date"=>"2020-03-05", "color"=>"Black", "sex"=>"M", "description"=>"what"}}
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (7.0ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/_cat.html.erb (1.3ms)
+  Rendered cats/_cat.html.erb (0.5ms)
+  Rendered cats/_cat.html.erb (0.5ms)
+  Rendered cats/_cat.html.erb (0.6ms)
+  Rendered cats/_cat.html.erb (0.3ms)
+  Rendered cats/_cat.html.erb (0.4ms)
+  Rendered cats/index.html.erb within layouts/application (58.1ms)
+Completed 200 OK in 114ms (Views: 106.6ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/cats/new" for ::1 at 2022-03-11 16:31:58 -0500
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/_form.html.erb (1.6ms)
+  Rendered cats/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 72ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cats" for ::1 at 2022-03-11 16:32:29 -0500
+Processing by CatsController#create as HTML
+  Parameters: {"cat"=>{"name"=>"Rj", "birth_date"=>"2022-02-28", "color"=>"Brown", "sex"=>"F", "description"=>"  asdfasd"}}
+  [1m[35m (7.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:23
+  [1m[36mCat Create (14.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2022-02-28"], ["color", "Brown"], ["name", "Rj"], ["sex", "F"], ["description", "  asdfasd"], ["created_at", "2022-03-11 21:32:29.418157"], ["updated_at", "2022-03-11 21:32:29.418157"]]
+  ↳ app/controllers/cats_controller.rb:23
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:23
+Redirected to http://localhost:3000/cats/7
+Completed 302 Found in 34ms (ActiveRecord: 26.3ms)
+
+
+Started GET "/cats/7" for ::1 at 2022-03-11 16:32:29 -0500
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (3.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/_cat.html.erb (2.0ms)
+  Rendered cats/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 73ms (Views: 66.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/cats" for ::1 at 2022-03-11 16:32:32 -0500
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.8ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/_cat.html.erb (2.0ms)
+  Rendered cats/_cat.html.erb (0.3ms)
+  Rendered cats/_cat.html.erb (0.9ms)
+  Rendered cats/_cat.html.erb (0.4ms)
+  Rendered cats/_cat.html.erb (0.3ms)
+  Rendered cats/_cat.html.erb (0.7ms)
+  Rendered cats/_cat.html.erb (0.4ms)
+  Rendered cats/index.html.erb within layouts/application (49.2ms)
+Completed 200 OK in 96ms (Views: 94.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cats/1/edit" for ::1 at 2022-03-11 16:34:30 -0500
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (1.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:32
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/_form.html.erb (6.5ms)
+  Rendered cats/edit.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 66035ms (Views: 298.0ms | ActiveRecord: 12.5ms)
+
+
