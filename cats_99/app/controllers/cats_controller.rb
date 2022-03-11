@@ -28,6 +28,7 @@ class CatsController < ApplicationController
   end
 
   def edit
+    debugger
     @cat = Cat.find(params[:id])
 
     render :edit

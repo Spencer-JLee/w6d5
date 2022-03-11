@@ -1,0 +1,31 @@
+<form action="<%= cats_url %>", method="GET">
+<input type="hidden" name="_method" value="PATCH">
+  <label> Name: 
+    <input type="text" name="cat[name]" value ="<%= cat.name %>"></label>
+    <br>
+    <label> Birth Date: <input type="date" name="cat[birth_date]" value="<%= cat.birth_date %>"></label> <br>
+
+    <label>Color:</label>
+    <select name="cat[color]" id="">
+
+      <option <%= cat.color == "Black" ? "selected" : "" %> value="Black">Black</option>
+      <option <%= cat.color == "White" ? "selected" : "" %> value="White">White</option>
+      <option <%= cat.color == "Brown" ? "selected" : "" %> value="Brown">Brown</option>      
+    </select>
+    <br>
+
+    
+    <label> Sex: 
+      <input <%= cat.sex == "M" ? "checked" : "" %> type="radio" id="M" name="cat[sex]" value = "M">
+      <label for="M">M</label>
+      <input <%= cat.sex == "F" ? "checked" : "" %> type="radio" id="F" name="cat[sex]" value="F">
+      <label for="F">F</label>
+    </label><br>
+
+  
+    <label for="description">Description</label>
+    <textarea name="cat[description]"> <%= cat.description %> </textarea>
+
+    <input type="submit" value="Edit Cat">
+  </label>
+</form>
