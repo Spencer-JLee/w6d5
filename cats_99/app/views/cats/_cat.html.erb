@@ -1,0 +1,39 @@
+<style>
+table,
+td {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+</style>
+<ul> 
+  <table>
+    <thead>
+        <tr>
+            <th colspan="5">Cats</th>
+        </tr>
+    </thead>
+      <tbody>
+        <tr>
+          <td><%= cat.name%></td>
+          <td><%= cat.birth_date%></td>
+          <td><%= cat.color%></td>
+          <td><%= cat.sex%></td>
+          <td><%= cat.description%></td>
+        </tr>
+      </tbody> 
+  </table>
+
+
+  <% if action == :show %>
+    <li><a href="<%= cats_url %>">Cat Index</a></li>
+
+  <% else %>
+    <li><a href="<%= cat_url(cat) %>">Cat Show Page</a></li>
+
+  <% end %>
+</ul>
