@@ -1342,3 +1342,42 @@ Processing by CatsController#edit as HTML
 Completed 200 OK in 66035ms (Views: 298.0ms | ActiveRecord: 12.5ms)
 
 
+Started GET "/cats/1/edit" for ::1 at 2022-03-11 16:52:12 -0500
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (0.8ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:32
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/_form.html.erb (1.5ms)
+  Rendered cats/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 72ms (Views: 33.9ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/cats/1/edit" for ::1 at 2022-03-11 16:52:21 -0500
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (1.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:32
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/_form.html.erb (1.2ms)
+  Rendered cats/edit.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/cats?_method=PATCH&cat%5Bname%5D=Derek&cat%5Bbirth_date%5D=2015-01-20&cat%5Bcolor%5D=Black&cat%5Bsex%5D=M&cat%5Bdescription%5D=poop" for ::1 at 2022-03-11 16:52:31 -0500
+Processing by CatsController#index as HTML
+  Parameters: {"cat"=>{"name"=>"Derek", "birth_date"=>"2015-01-20", "color"=>"Black", "sex"=>"M", "description"=>"poop"}}
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (1.2ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/_cat.html.erb (1.1ms)
+  Rendered cats/_cat.html.erb (0.3ms)
+  Rendered cats/_cat.html.erb (0.3ms)
+  Rendered cats/_cat.html.erb (0.3ms)
+  Rendered cats/_cat.html.erb (0.3ms)
+  Rendered cats/_cat.html.erb (0.3ms)
+  Rendered cats/_cat.html.erb (0.3ms)
+  Rendered cats/index.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 61ms (Views: 58.4ms | ActiveRecord: 1.2ms)
+
+

@@ -28,13 +28,14 @@ class CatsController < ApplicationController
   end
 
   def edit
-    debugger
+    
     @cat = Cat.find(params[:id])
 
     render :edit
   end
 
   def update
+    
     @cat = Cat.find(params[:id])
 
     if @cat.update(cat_params)
